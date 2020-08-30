@@ -147,7 +147,6 @@
           <div>
             <ul class="navbar-buttons d-inline-block align-middle mr-lg-2">
               <li class="d-block d-lg-none"><a href="#mobile-menu" data-toggle="offcanvas"><i class="fe-icon-menu"></i></a></li>
-              <li><a href="#" data-toggle="search"><i class="fe-icon-search"></i></a></li>
             </ul><a class="btn btn-gradient ml-3 d-none d-xl-inline-block" href="https://themes.getbootstrap.com/product/createx-multipurpose-template-ui-kit/" target="_blank">Начать</a>
           </div>
         </div>
@@ -155,22 +154,31 @@
     </header>
     <!-- Page Content-->
     <!-- Hero Slider-->
-     <section class="bg-center-top bg-no-repeat py-2">
+    <section class="featured-posts-slider d-lg-flex">
       <div class="column">
-        <div class="row align-items-center pb-lg-5">
-          <div class="col-lg-6 pt-lg-5 pt-xl-0 pb-lg-4 mb-lg-5">
-            <div class="mx-auto ml-lg-auto mr-lg-0 text-center text-lg-left" style="max-width: 555px;">
-              <h2 class="h3 text-body pt-md-5 pb-2"><span class='font-weight-normal'>Инвестируй </span> без границ <span class='font-weight-normal'>в доходную недвижимость</span></h2>
-              <h3 class="h3 text-body text-xl mb-1 pt-md-2"><span class='font-weight-normal'>Зарабатывайте на инвестициях в доходную недвижимость по всему миру на единой онлайн платформе </span> </h3>
-              <div class="pt-md-5"><a class="scroll-to btn btn-style-4 btn-primary mr-3 mb-3" href="#contacts" data-parallax="{&quot;y&quot; : 25}">Начать</a><a class="scroll-to btn btn-style-4 btn-gradient btn-icon-right mb-3" href="#projects" data-parallax="{&quot;y&quot; : -25}"><i class="fe-icon-arrow-down text-md"></i>Посмотреть объекты</a></div>
-            </div>
+        <div class="owl-carousel post-preview-img-carousel" data-parallax="{&quot;x&quot; : 50}" data-owl-carousel="{ &quot;nav&quot;: false, &quot;dots&quot;: false, &quot;loop&quot;: true, &quot;mouseDrag&quot;: false, &quot;touchDrag&quot;: false, &quot;pullDrag&quot;: false }"><a class="post-preview-img" href="shop-boxed-ft.html" style="background-image: url(img/homepages/shop-v1/тест5.jpeg);"></a><a class="post-preview-img" href="shop-fw-ls.html" style="background-image: url(img/homepages/shop-v1/hero-slide02.jpg);"></a><a class="post-preview-img" href="shop-fw-ls.html" style="background-image: url(img/homepages/shop-v1/hero-slide03.jpg);"></a></div>
+      </div>
+      <div class="column">
+        <div class="owl-carousel post-cards-carousel" data-owl-carousel="{ &quot;nav&quot;: true, &quot;dots&quot;: false, &quot;loop&quot;: true, &quot;autoHeight&quot;: true }">
+          <div class="card-body">
+            <h2 class="h3 text-body pt-md-2 pb-2"><span class='font-weight-normal'>Инвестируй </span> без границ <span class='font-weight-normal'>в доходную недвижимость</span></h2><div class="mx-auto" style="max-width: 45rem;">
+            <h3 class="h3 text-body text-xl mb-0"><span class='font-weight-normal'>Зарабатывайте на инвестициях в доходную недвижимость по всему миру на единой онлайн платформе </span> </h3>
+            <div class="pt-3"><a class="scroll-to btn btn-style-4 btn-primary mr-3 mb-3" href="#contacts" data-parallax="{&quot;y&quot; : 25}">Начать</a><a class="scroll-to btn btn-style-4 btn-gradient btn-icon-right mb-3" href="#projects" data-parallax="{&quot;y&quot; : -25}"><i class="fe-icon-arrow-down text-md"></i>Посмотреть объекты</a></div>
           </div>
-          <div class="col-lg-5 pt-2 mb-lg-5" data-parallax="{&quot;x&quot; : 50}"><img class="d-block mx-auto mx-md-0" src="img/homepages/shop-v1/тест6.jpeg" alt="Web App Interface"></div>
+        </div>
+          <div class="card-body"><img class="d-block mb-4" src="img/homepages/shop-v1/investore.jpeg" style="width: 159px !important;" alt="DJI">
+            <h2 class="h3 text-body pt-md-5 pb-3"><span class="d-block font-family-body font-weight-light pb-2">Управляй!</span><span class="d-block font-family-body font-weight-light">портфелем через <span class='font-weight-bold'>КАБИНЕТ</span></span></h2>
+            <p class="lead text-muted pb-3"> <strong> </strong></p><a class="btn btn-style-5 btn-primary" href="shop-boxed-ft.html">Зарегистрироваться&nbsp;<i class="fe-icon-arrow-right"></i></a>
+          </div>
+          <div class="card-body"><img class="d-block mb-4" src="img/homepages/shop-v1/investore.jpeg" style="width: 159px !important;" alt="DJI">
+            <h2 class="h3 text-body pt-md-5 pb-3"><span class="d-block font-family-body font-weight-light pb-2">Торгуй!</span><span class="d-block font-family-body font-weight-light">своими активами <span class='font-weight-bold'>на БИРЖЕ</span></span></h2>
+            <p class="lead text-muted pb-3">От 1 000 руб <strong> </strong></p><a class="btn btn-style-5 btn-primary" href="shop-boxed-ft.html">Перейти к бирже&nbsp;<i class="fe-icon-arrow-right"></i></a>
+          </div>
         </div>
       </div>
     </section>
+    <hr class="mt-5">
     <!-- Top Categories-->
-
      <hr class="mt-7">
      <!-- Project-->
     <section class="container py-5 mb-3">
@@ -201,8 +209,8 @@
                     <td></td>
                    <td><small></small></td>
                    <td></td>
-                   <td> <h5 class="portfolio-title text-right">17,2%</h5></td>
-                   <td>$</td>
+                   <td> <h2 class="portfolio-title text-right text-lg">17,2%</h2></td>
+                   <td> <p class="text-primary text-justify"> $</p> </td>
                  </tr>
                  </tbody>
                </table>
@@ -249,8 +257,8 @@
                     <td></td>
                    <td><small></small></td>
                    <td></td>
-                   <td> <h5 class="portfolio-title text-right">18,1%</h5></td>
-                   <td> $</td>
+                   <td> <h5 class="portfolio-title text-right text-lg">18,1%</h5></td>
+                   <td> <p class="text-primary"> $</p> </td>
                  </tr>
                  </tbody>
                </table>
@@ -273,7 +281,7 @@
         </div>
         <!-- Portfolio Item-->
         <div class="col-md-4 col-sm-6 mb-30 pb-2">
-          <div class="card portfolio-card"><div class="card-footer border-0 bg-light text-white "><div class="navbar-link"><img src="img/flags/rus.png" alt="Thumbnail square"/> </div><p class="navbar-link text-left">Россия,  Москва </p><strong class="navbar-link">ул. Черепановых </strong></div><a class="portfolio-thumb" href="portfolio-single-wide-slider.html"><img src="img/portfolio/Объекты/8 2.jpeg" alt="Portfolio Thumbnail"/></a>
+          <div class="card portfolio-card"><div class="card-footer border-0 bg-light text-white "><div class="navbar-link"><img src="img/flags/rus.png" alt="Thumbnail square"/> </div><p class="navbar-link text-left">Россия,  Москва </p><strong class="navbar-link">ул. Черепановых </strong></div><a class="portfolio-thumb" href="portfolio-single-wide-slider.html"><img src="img/portfolio/Объекты/10.jpeg" alt="Portfolio Thumbnail"/></a>
             <div class="card-header">
               <table class="table table-borderless table-sm">
                 <tbody>
@@ -296,8 +304,8 @@
                     <td></td>
                    <td><small></small></td>
                    <td></td>
-                   <td> <h5 class="portfolio-title text-right">19%</h5></td>
-                   <td> руб </td>
+                   <td> <h5 class="portfolio-title text-right text-lg">19%</h5></td>
+                   <td> <p class="text-primary"> руб</p> </td>
                  </tr>
                  </tbody>
                </table>
