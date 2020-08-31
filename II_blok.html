@@ -62,6 +62,9 @@
             <div class="card-header"><a class="mobile-menu-link" href="about-us-v1.html">О нас</a></div>
           </div>
           <!-- Components-->
+          <div class="card">
+            <div class="card-header"><a class="mobile-menu-link" href="components.html">Components</a></div>
+          </div>
         </div>
       </div>
       <div class="offcanvas-footer px-4 pt-3 pb-2 text-center"><a class="social-btn sb-style-3 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-3 sb-facebook" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-3 sb-pinterest" href="#"><i class="socicon-pinterest"></i></a><a class="social-btn sb-style-3 sb-instagram" href="#"><i class="socicon-instagram"></i></a></div>
@@ -100,9 +103,9 @@
           <div><a class="navbar-link mr-3" href="tel:+1212477690000"><i class="fe-icon-phone"></i>+1 (212) 477 690 000</a><a class="navbar-link mr-3" href="mailto:support@example.com"><i class="fe-icon-mail"></i>support@example.com</a><a class="social-btn sb-style-3 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-3 sb-facebook" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-3 sb-pinterest" href="#"><i class="socicon-pinterest"></i></a><a class="social-btn sb-style-3 sb-instagram" href="#"><i class="socicon-instagram"></i></a></div>
           <div>
             <ul class="list-inline mb-0">
-              <li class="dropdown-toggle mr-2"><a class="navbar-link" href="account-login.html"><i class="fe-icon-user"></i>Войти или зарегистрироваться</a>
+              <li class="dropdown-toggle mr-2"><a class="navbar-link" href="account-login.html"><i class="fe-icon-user"></i>Login or Create account</a>
                 <div class="dropdown-menu right-aligned p-3 text-center" style="min-width: 200px;">
-                  <p class="text-sm opacity-70">Sign in to your account or register new one to have full control over your orders, receive bonuses and more.</p><a class="btn btn-primary btn-sm btn-block" href="https://test-server.investore.club/user/realEstateListInvestor">Войти</a>
+                  <p class="text-sm opacity-70">Sign in to your account or register new one to have full control over your orders, receive bonuses and more.</p><a class="btn btn-primary btn-sm btn-block" href="account-login.html">Sign In</a>
                   <p class="text-sm text-muted mt-3 mb-0">New customer? <a href='account-login.html'>Register</a></p>
                 </div>
               </li>
@@ -123,6 +126,9 @@
         </div>
         <div class="navbar justify-content-end justify-content-lg-between">
           <!-- Search-->
+          <form class="search-box" method="get">
+            <input type="text" id="site-search" placeholder="Type A or C to see suggestions"><span class="search-close"><i class="fe-icon-x"></i></span>
+          </form>
           <!-- Main Menu-->
           <ul class="navbar-nav d-none d-lg-block">
             <!-- Home-->
@@ -134,7 +140,7 @@
             <!-- Blog-->
             <li class="nav-item mega-dropdown-toggle"><a class="nav-link" href="blogMS.html">Блог</a>
             </li>
-            <!-- FAQ-->
+             <!-- FAQ-->
             <li class="nav-item mega-dropdown-toggle"><a class="nav-link" href="faq.html">FAQ</a>
             </li>
             <!-- Shop-->
@@ -153,263 +159,155 @@
       </div>
     </header>
     <!-- Page Content-->
-    <!-- Hero Slider-->
-     <section class="bg-center bg-no-repeat py-7">
-      <div class="container">
-        <div class="row align-items-center pb-lg-7">
-          <div class="col-lg-6 pt-lg-5 pt-xl-0 pb-lg-4 mb-lg-5">
-            <div class="mx-auto ml-lg-auto mr-lg-0 text-center text-lg-left" style="max-width: 555px;">
-              <h2 class="h3 text-body pt-md-5 pb-3"><span class="d-block font-family-body font-weight-light pb-2">Инвестируй в недвижимость!</span><span class="font-weight-bold">без границ</span></h2>
-              <h3 class="h3 text-body text-xl mb-1 pt-md-2"><span class='font-weight-normal'>Зарабатывайте на инвестициях в доходную недвижимость по всему миру на единой онлайн платформе </span> </h3>
-              <h3 class="h3 text-body text-xl mb-1 pt-md-2"><span class='font-weight-normal'></span> </h3>
-              <h3 class="mb-4 mb-md-5" data-parallax="{&quot;x&quot; : 50}"><span class="d-none">UX/UI Designer</span></h3>
-              <h3 class="mb-4 mb-md-5" data-parallax="{&quot;x&quot; : 50}"><span class="d-none">UX/UI Designer</span></h3>
-              <h3 class="pt-md-2 d-sm-none d-md-block" ><a class="scroll-to btn btn-style-4 btn-primary mr-3 mb-3" href="#contacts" data-parallax="{&quot;y&quot; : 25}">Начать</a><a class="scroll-to btn btn-style-4 btn-gradient btn-icon-right mb-3" href="#projects" data-parallax="{&quot;y&quot; : -25}"><i class="fe-icon-arrow-down text-md"></i>объекты</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-6 pt-2 mb-lg-5" data-parallax="{&quot;x&quot; : 50}"><img class="d-block mx-auto mx-md-0" src="img/homepages/shop-v1/тест7.jpeg" alt="Web App Interface"></div>
-        </div>
+    <!-- Hero-->
+    <section class="bg-parallax bg-secondary py-5 mb-5">
+      <div class="bg-parallax-img" data-parallax="{&quot;y&quot; : 100}"><img src="img/homepages/mobile-app-showcase/cta-bg.jpg" alt="Parallax Background"/>
+      </div>
+      <div class="container bg-parallax-content py-5 my-3 text-center">
+              <h3 class="text-white">Умные технологии <span class='font-weight-normal'> для лучших решений об инвестициях в недвижимость</span></h3>
+              <p class="text-white opacity-80 mb-1 pt-md-2">Мы используем большие данные и искусственный интелект в сфере недвижимости, для поиска и выбора наиболее доходных проектов</p>
       </div>
     </section>
-    <!-- Top Categories-->
-
-     <hr class="mt-7">
-     <!-- Project-->
-    <section class="container py-5 mb-3">
-      <h2 class="h3 block-title text-center mt-3">Объекты для инвестиций<small>Создайте свой инвестиционный портфель из активов недвижимости по всему миру</small></h2>
-      <div class="row pt-4">
-        <!-- Portfolio Item-->
-        <div class="col-md-4 col-sm-6 mb-30 pb-2" id="projects">
-          <div class="card portfolio-card"><div class="card-footer border-0 bg-light text-white "><div class="navbar-link"><img src="img/flags/Indonesia.png" alt="Thumbnail square"/> </div><p class="navbar-link text-left">Индонезия,  Бали </p><strong class="navbar-link">El Paradiso Villa </strong></div><a class="portfolio-thumb" href="project-side3.html"><img src="img/portfolio/Объекты/2 2.jpeg" alt="Portfolio Thumbnail"/></a>
-             <div class="card-header">
-              <table class="table table-borderless table-sm">
-                <tbody>
-                <tr>
-                  <td><small class="text-left font-weight-medium ">ДОЛГОСРОЧНАЯ АРЕНДА </small></td>
-                   <td><a class="iziToast-body"><i class="iziToast-icon fe-icon-feather" data-toggle="tooltip" data-placement="right" title="Договор займа">
-                   </i></a></td>
-                  <td><a class="back-btn"><i class="fe-icon-clock" data-toggle="tooltip" data-placement="right" title="Выплаты ежеквартально">
-                   </i></a></td>
-                   <td><a class="back-btn"><i class="iziToast-icon fe-icon-dollar-sign" data-toggle="tooltip" data-placement="right" title="Валюта займа рубли"></i></a></td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-             <div class="card-body">
-              <table class="table table-borderless table-sm">
-                 <tbody>
-                 <tr>
-                   <td><p class="text">Доходность в годовых </td>
-                    <td></td>
-                   <td><small></small></td>
-                   <td></td>
-                   <td> <h5 class="portfolio-title text-right">17,2%</h5></td>
-                   <td>$</td>
-                 </tr>
-                 </tbody>
-               </table>
-              <span class="progress-label">
-                <i class="fe-icon-database"></i>
-                Проинвестировано
-              </span>
-              <div class="progress progress-style-3 progress-animate-fill">
-              <div class="progress-bar bg-gradient" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              <span class="progress-label">
-                12 000 $
-              </span>
-            </div>
-              <span class="progress-label text-right font-weight-bold text-lg text-primary">20 000 <small>$</small> </span>
-            </div>
-            <div class="card-footer">
-              <a class="btn btn-style-5 btn-primary btn-sm btn-block" href="#">Инвестировать</a>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio Item-->
-        <!-- Portfolio Item-->
-        <div class="col-md-4 col-sm-6 mb-30 pb-2">
-          <div class="card portfolio-card"><div class="card-footer border-0 bg-light text-white "><div class="navbar-link"><img src="img/flags/Indonesia.png" alt="Thumbnail square"/> </div><p class="navbar-link text-left">Индонезия,  Бали </p><strong class="navbar-link">El Paradiso Villa </strong></div><a class="portfolio-thumb" href="Project_side.html"><img src="img/portfolio/Объекты/6 2.jpeg" alt="Portfolio Thumbnail"/></a>
-             <div class="card-header">
-              <table class="table table-borderless table-sm">
-                <tbody>
-                <tr>
-                  <td><small class="text-left font-weight-medium">ФИНАНСИРОВАНИЕ СТРОИТЕЛЬСТВА </small></td>
-                   <td><a class="iziToast-body"><i class="iziToast-icon fe-icon-feather" data-toggle="tooltip" data-placement="right" title="Договор займа">
-                   </i></a></td>
-                  <td><a class="back-btn"><i class="fe-icon-clock" data-toggle="tooltip" data-placement="right" title="Выплаты ежеквартально">
-                   </i></a></td>
-                   <td><a class="back-btn"><i class="iziToast-icon fe-icon-dollar-sign" data-toggle="tooltip" data-placement="right" title="Валюта займа рубли"></i></a></td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-             <div class="card-body">
-              <table class="table table-borderless table-sm">
-                 <tbody>
-                 <tr>
-                   <td><p class="text">Доходность в годовых </td>
-                    <td></td>
-                   <td><small></small></td>
-                   <td></td>
-                   <td> <h6 class="portfolio-title text-right">18,1%</h6></td>
-                   <td> $</td>
-                 </tr>
-                 </tbody>
-               </table>
-              <span class="progress-label">
-                <i class="fe-icon-database"></i>
-                Проинвестировано
-              </span>
-              <div class="progress progress-style-3 progress-animate-fill">
-              <div class="progress-bar bg-gradient" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              <span class="progress-label">
-                15 000 $
-              </span>
-            </div>
-              <span class="progress-label text-right font-weight-bold text-lg text-primary">10 000 <small>$</small></span>
-            </div>
-            <div class="card-footer">
-              <a class="btn btn-style-5 btn-primary btn-sm btn-block" href="#">Инвестировать</a>
-            </div>
-          </div>
-        </div>
-        <!-- Portfolio Item-->
-        <div class="col-md-4 col-sm-6 mb-30 pb-2">
-          <div class="card portfolio-card"><div class="card-footer border-0 bg-light text-white "><div class="navbar-link"><img src="img/flags/rus.png" alt="Thumbnail square"/> </div><p class="navbar-link text-left">Россия,  Москва </p><strong class="navbar-link">ул. Черепановых </strong></div><a class="portfolio-thumb" href="portfolio-single-wide-slider.html"><img src="img/portfolio/Объекты/8.jpeg" alt="Portfolio Thumbnail"/></a>
-            <div class="card-header">
-              <table class="table table-borderless table-sm">
-                <tbody>
-                <tr>
-                  <td><small class="text-left font-weight-medium">ФИНАНСИРОВАНИЕ СТРОИТЕЛЬСТВА </small></td>
-                   <td><strong class="iziToast-body text-body"><i class="iziToast-icon fe-icon-feather" data-toggle="tooltip" data-placement="right" title="Договор займа">
-                   </i></strong></td>
-                  <td><a class="back-btn "><i class="fe-icon-clock" data-toggle="tooltip" data-placement="right" title="Выплаты ежеквартально">
-                   </i></a></td>
-                   <td><a class="back-btn  "><i class="iziToast-icon fe-icon-dollar-sign" data-toggle="tooltip" data-placement="right" title="Валюта займа рубли"></i></a></td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-             <div class="card-body">
-              <table class="table table-borderless table-sm">
-                 <tbody>
-                 <tr>
-                   <td><p class="text">Доходность в годовых </td>
-                    <td></td>
-                   <td><small></small></td>
-                   <td></td>
-                   <td> <h5 class="portfolio-title text-right">19%</h5></td>
-                   <td> руб </td>
-                 </tr>
-                 </tbody>
-               </table>
-              <span class="progress-label">
-                <i class="fe-icon-database"></i>
-                Проинвестировано
-              </span>
-              <div class="progress progress-style-3 progress-animate-fill">
-              <div class="progress-bar bg-gradient" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              <span class="progress-label">
-                7 000 000 руб
-              </span>
-            </div>
-              <span class="progress-label text-right font-weight-bold text-lg text-primary">3 000 000 <small> руб </small> </span>
-            </div>
-            <div class="card-footer">
-              <a class="btn btn-style-5 btn-primary btn-sm btn-block" href="#">Инвестировать</a>
-            </div>
-          </div>
-        </div>
-         </div>
-      <div class="text-center pt-2"><a class="btn btn-style-4 btn-secondary btn-icon-right" href="portfolio-style2-boxed.html"><i class="fe-icon-arrow-right text-md bg-white text-primary"></i>Посмотреть все объекты</a></div>
-    </section>
-     <hr class="mt-7">
-    <section class="container py-5 mb-3">
-      <h2 class="h3 block-title text-center mt-3">Как это работает<small>Просто, выгодно, безопасно</small></h2>
-      <div class="row py-2">
-        <div class="col-lg-3 col-sm-6">
-          <!-- Step-->
-          <div class="step step-with-icon">
-            <div class="step-number">1</div>
-            <div class="step-icon"><img src="img/icons/icon-commercial.png" alt="Gathering User Data"></div>
-            <h3 class="step-title">Выберете объект</h3>
-            <p class="step-text text-sm">Получите полную и достоверную информацию об объекте инвестирования, его доходности, владельце и рейтинге;.</p><a class="step-link" href="#">Узнать больше<i class="fe-icon-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <!-- Step-->
-          <div class="step step-with-icon">
-            <div class="step-number">2</div>
-            <div class="step-icon"><img src="img/icons/prototyping.svg" alt="Prototyping (Wireframes)"></div>
-            <h3 class="step-title">Инвестируйте</h3>
-            <p class="step-text text-sm">Через безопасный номинальный счет в рублях или в валюте всего от 10 000 руб.</p><a class="step-link" href="#">Learn more<i class="fe-icon-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <!-- Step-->
-          <div class="step step-with-icon">
-            <div class="step-number">3</div>
-            <div class="step-icon"><img src="img/icons/ui-design.svg" alt="Pixel-perfect UI Design"></div>
-            <h3 class="step-title">Получайте дивиденды</h3>
-            <p class="step-text text-sm">Ежемесячно с доходностью от 16% годовых в рублях и валюте .</p><a class="step-link" href="#">Learn more<i class="fe-icon-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-          <!-- Step-->
-          <div class="step step-with-icon">
-            <div class="step-number">4</div>
-            <div class="step-icon"><img src="img/icons/coding.svg" alt="Development (Coding)"></div>
-            <h3 class="step-title">Торгуйте активами</h3>
-            <p class="step-text text-sm">Покупайте инвестиционные доли в объектах инвестирования у других пользователей без порога и ограничений;
-              Продавайте свои инвестиционные доли другим пользователям с прибылью или дисконтом.</p><a class="step-link" href="#">Learn more<i class="fe-icon-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Promo #1-->
-    <section class="bg-center bg-repeat-y pt-3" style="background-image: url(img/homepages/marketing-seo/cta01-bg.png);">
-      <div class="container-fluid pt-4">
+    <!-- Info Block #1-->
+    <section class="bg-parallax bg-secondary py-3 mb-5 pt-5" style="margin-top: -100px; background-image: url(img/homepages/web-app-showcase/info01-bg.jpg); background-color: #fffbfb;" data-offset-top="50" id="info">
+      <div class="container pt-5">
         <div class="row align-items-center">
-          <div class="col-xl-5 col-md-6 offset-xl-1"><img class="d-block mx-auto" src="img/homepages/marketing-seo/cta01.png" alt="CreateX Marketing"></div>
-          <div class="col-xl-5 col-md-6 text-center text-md-left py-5">
-            <h2 class="h3 block-title text-white">Платформа с искусственным интелектом </h2>
-            <p class="text-lg text-white py-3">Обрабатывая тысячи рыночных предложений о продаже и аренде объектов коммерческой недвижимости наши алгоритмы используют геоанализ окружения для оценки факторов, непосредственно влияющих на доходность потенциальных арендаторов. Это позволяет определить дополнительный потенциал стоимости объекта или выявить его текущую переоценку.</p><a class="btn btn-light mb-3" href="II_blok.html">Узнать больше</a>
+          <div class="col-md-7 order-2 order-md-1 pt-3 pt-md-0"><img class="d-block mx-auto mx-md-0" src="img/homepages/web-app-showcase/hero-img.png" alt="Info Block #1"></div>
+          <div class="col-md-5 order-1 order-md-2 text-center text-md-left">
+            <h2 class="h4">Ms<span class='text-accent'>Predict</span></h2>
+            <p class="text-muted pt-3 pb-3 pb-md-4">Обрабатывая тысячи рыночных предложений о продаже и аренде объектов коммерческой недвижимости наши алгоритмы используют геоанализ окружения для оценки факторов, непосредственно влияющих на доходность потенциальных арендаторов. Это позволяет определить дополнительный потенциал стоимости объекта или выявить его текущую переоценку</p><a class="btn btn-style-4 btn-primary" href="#">Learn More</a>
           </div>
         </div>
       </div>
     </section>
-        <!-- Portfolio Item-->
-
-        <!-- Portfolio Item-->
-
-        <!-- Portfolio Item-->
-
-    <!-- Product Widgets-->
-    <section class="container py-5 mb-3">
-      <h2 class="h3 block-title text-center pt-2">Ваша безопасность<small>Безопасные инвестиции наш приоритет </small></h2>
-      <div class="row pt-5 mt-30">
-        <div class="col-lg-4 col-sm-6 mb-30 pb-5"><a class="card" href="#">
-            <div class="box-shadow bg-white rounded-circle mx-auto" style="width: 90px; height: 90px; margin-top: -45px;"><img class="d-block mx-auto" src="img/homepages/corporate-website/service-icon01.png" alt="Certification"></div>
-            <div class="card-body text-center">
-              <h3 class="card-title pt-1">Регулирование ЦБ</h3>
-              <p class="card-text text-sm">Наша платформа входит в реестр операторов инвестиционных платформ и полностью контролируется Центральным Банком РФ.</p><span class="text-sm text-uppercase font-weight-bold">Подробнее&nbsp;<i class="fe-icon-arrow-right"></i></span>
-            </div></a></div>
-        <div class="col-lg-4 col-sm-6 mb-30 pb-5"><a class="card" href="#">
-            <div class="box-shadow bg-white rounded-circle mx-auto" style="width: 90px; height: 90px; margin-top: -45px;"><img class="d-block mx-auto" src="img/homepages/corporate-website/service-icon02.png" alt="Training"></div>
-            <div class="card-body text-center">
-              <h3 class="card-title pt-1">Номинальный счет</h3>
-              <p class="card-text text-sm">Все операции на платформе проходят через специально выделенный счет, владельцами которого являются сами инвесторы.</p><span class="text-sm text-uppercase font-weight-bold">Подробнее&nbsp;<i class="fe-icon-arrow-right"></i></span>
-            </div></a></div>
-        <div class="col-lg-4 col-sm-6 mb-30 pb-5"><a class="card" href="#">
-            <div class="box-shadow bg-white rounded-circle mx-auto" style="width: 90px; height: 90px; margin-top: -45px;"><img class="d-block mx-auto" src="img/homepages/corporate-website/service-icon03.png" alt="Consulting"></div>
-            <div class="card-body text-center">
-              <h3 class="card-title pt-1">Надежные проекты</h3>
-              <p class="card-text text-sm">Все проекты на нашей платформе прошли тщательный аудит юридической чистоты и финансовой привлекательности.</p><span class="text-sm text-uppercase font-weight-bold">Подробнее&nbsp;<i class="fe-icon-arrow-right"></i></span>
-            </div></a></div>
+    <!-- Info Block #2-->
+    <section class="bg-center-top bg-no-repeat py-5" style="margin-top: -110px; background-image: url(img/homepages/web-app-showcase/info02-bg.jpg); background-color: #fffbfb;">
+      <div class="container pt-5 pb-3 pb-md-4">
+        <div class="row align-items-center">
+          <div class="col-md-5 text-center text-md-left">
+            <h2 class="h4">Ms<span class='text-primary'>Analytic</span></h2>
+            <p class="text-muted pt-3 pb-3 pb-md-4">На основе изучения инфраструктуры анализируемой локации и ее конкурентного окружения, система идентифицирует востребованные рынком варианты бизнеса, совместимые с параметрами оцениваемого объекта и требованиями потенциальных арендаторов, для каждого варианта использования</p><a class="btn btn-style-4 btn-primary" href="#">Learn More</a>
+          </div>
+          <div class="col-md-7 pt-3 pt-md-0"><img class="d-block mx-auto ml-md-auto mr-md-0" src="img/homepages/web-app-showcase/info02.png" alt="Info Block #2"></div>
+        </div>
       </div>
     </section>
-    <!-- Popular Brands-->
-    <!-- Shop Services-->
+    <!-- Info Block #3-->
+    <section class="bg-parallax bg-secondary py-3 mb-5" style="margin-top: -100px; background-image: url(img/homepages/web-app-showcase/info01-bg.jpg); background-color: #fffbfb;" data-offset-top="50" id="info">
+      <div class="container pt-5">
+        <div class="row align-items-center">
+          <div class="col-md-7 order-2 order-md-1 pt-3 pt-md-0"><img class="d-block mx-auto mx-md-0" src="img/homepages/web-app-showcase/info01.png" alt="Info Block #1"></div>
+          <div class="col-md-5 order-1 order-md-2 text-center text-md-left">
+            <h2 class="h4">Ms<span class='text-accent'>Tokenization</span></h2>
+            <p class="text-muted pt-3 pb-3 pb-md-4">Цифровая доля в экосистеме InveStore представляет собой цифровой криптографический актив, привязанный к реальному объекту недвижимости. Количество выпускаемых цифровых долей определяется путем деления стоимости объекта недвижимости на номинал одной цифровой доли  (1 000 руб). Став владельцем цифровых долей, инвестор получает юридически оформленное право на часть прибыли, создаваемой объектом, а алгоритм платформы обеспечивает безошибочное и автономное распределение дивидендов в соответствии с реестром держателей</p><a class="btn btn-style-4 btn-primary" href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team-->
+    <section class="container pb-5">
+      <h2 class="h3 block-title text-center mb-4">Meet Our Team<small>People behind your great experience</small></h2>
+      <div class="row">
+        <!-- Team member-->
+        <div class="col-lg-3 col-sm-6">
+          <div class="team-card-style-1 mx-auto">
+            <div class="team-card-inner">
+              <div class="team-thumb"><img src="img/team/style-1/01.jpg" alt="Team Member Picture"/>
+              </div>
+              <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-github" href="#"><i class="socicon-github"></i></a><a class="social-btn sb-style-4 sb-stackoverflow" href="#"><i class="socicon-stackoverflow"></i></a><a class="social-btn sb-style-4 sb-skype" href="#"><i class="socicon-skype"></i></a></div><a class="team-contact-link" href="tel:+19871625346"><i class="fe-icon-phone"></i>&nbsp;+1 (987) 162 53 46</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;info@example.com</a>
+            </div><span class="team-position">Lead Programmer</span>
+            <h4 class="team-name">William Smith</h4>
+          </div>
+        </div>
+        <!-- Team member-->
+        <div class="col-lg-3 col-sm-6">
+          <div class="team-card-style-1 mx-auto">
+            <div class="team-card-inner">
+              <div class="team-thumb"><img src="img/team/style-1/02.jpg" alt="Team Member Picture"/>
+              </div>
+              <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-facebook" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-google-plus" href="#"><i class="socicon-googleplus"></i></a><a class="social-btn sb-style-4 sb-linkedin" href="#"><i class="socicon-linkedin"></i></a></div><a class="team-contact-link" href="tel:+57872336590"><i class="fe-icon-phone"></i>&nbsp;+5 (787) 233 65 90</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;info@example.com</a>
+            </div><span class="team-position">Marketing Manager</span>
+            <h4 class="team-name">Samantha Palson</h4>
+          </div>
+        </div>
+        <!-- Team member-->
+        <div class="col-lg-3 col-sm-6">
+          <div class="team-card-style-1 mx-auto">
+            <div class="team-card-inner">
+              <div class="team-thumb"><img src="img/team/style-1/03.jpg" alt="Team Member Picture"/>
+              </div>
+              <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-pinterest" href="#"><i class="socicon-pinterest"></i></a><a class="social-btn sb-style-4 sb-behance" href="#"><i class="socicon-behance"></i></a><a class="social-btn sb-style-4 sb-dribbble" href="#"><i class="socicon-dribbble"></i></a></div><a class="team-contact-link" href="tel:+13907765843"><i class="fe-icon-phone"></i>&nbsp;+1 (390) 776 58 43</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;info@example.com</a>
+            </div><span class="team-position">Graphic Designer</span>
+            <h4 class="team-name">Emma Johnson</h4>
+          </div>
+        </div>
+        <!-- Team member-->
+        <div class="col-lg-3 col-sm-6">
+          <div class="team-card-style-1 mx-auto">
+            <div class="team-card-inner">
+              <div class="team-thumb"><img src="img/team/style-1/04.jpg" alt="Team Member Picture"/>
+              </div>
+              <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-facebook" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-skype" href="#"><i class="socicon-skype"></i></a><a class="social-btn sb-style-4 sb-linkedin" href="#"><i class="socicon-linkedin"></i></a></div><a class="team-contact-link" href="tel:+72056557984"><i class="fe-icon-phone"></i>&nbsp;+7 (205) 655 79 84</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;info@example.com</a>
+            </div><span class="team-position">CEO, Co-Founder</span>
+            <h4 class="team-name">James McCorvinus</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills-->
+    <section class="d-lg-table bg-secondary">
+      <div class="d-none d-lg-table-cell align-middle w-50 bg-center bg-no-repeat bg-cover text-center" style="background-image: url(img/pages/about-skills-bg.jpg);"><a class="video-player-button" href="https://player.vimeo.com/video/93641234?color=ac32e4&amp;title=0&amp;byline=0&amp;portrait=0" data-fancybox data-width="1000" data-height="563"><i class="fe-icon-play"></i></a><span class="d-block video-player-label text-muted pt-3">Click me to watch video!</span></div>
+      <div class="d-lg-table-cell py-5 my-lg-5 px-2 px-lg-5">
+        <div class="p-3">
+          <h2 class="h3 block-title mb-4">Our Key Skills</h2>
+          <p class="text-muted pb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          <!-- Progress-->
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-globe"></i>Web Development - 60%</span></div>
+          </div>
+          <!-- Progress-->
+          <div class="progress mb-3">
+            <div class="progress-bar bg-accent" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-monitor"></i>UX/UI Design - 50%</span></div>
+          </div>
+          <!-- Progress-->
+          <div class="progress mb-3">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-edit"></i>Illustration - 45%</span></div>
+          </div>
+          <!-- Progress-->
+          <div class="progress mb-3">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-feather"></i>Iconography - 55%</span></div>
+          </div>
+          <!-- Progress-->
+          <div class="progress mb-3">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-database"></i>Back-End Dev - 75%</span></div>
+          </div>
+          <!-- Progress-->
+          <div class="progress mb-3">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-settings"></i>Front-End Dev - 65%</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Partners-->
+    <section class="container py-5 my-2">
+      <h2 class="h3 block-title text-center mt-3 mb-5">Our Partners<small>Well respected people and companies from around the world</small></h2>
+      <div class="row">
+        <div class="col-6 col-md-3"><a class="d-block box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/01.png" width="165" alt="Partner"></a></div>
+        <div class="col-6 col-md-3"><a class="d-block box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/02.png" width="165" alt="Partner"></a></div>
+        <div class="col-6 col-md-3"><a class="d-block box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/03.png" width="165" alt="Partner"></a></div>
+        <div class="col-6 col-md-3"><a class="d-block box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/04.png" width="165" alt="Partner"></a></div>
+        <div class="col-6 col-md-3"><a class="d-block box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/07.png" width="165" alt="Partner"></a></div>
+        <div class="col-6 col-md-3"><a class="d-block box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/05.png" width="165" alt="Partner"></a></div>
+        <div class="col-6 col-md-3"><a class="d-block box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/08.png" width="165" alt="Partner"></a></div>
+        <div class="col-6 col-md-3"><a class="d-block box-shadow py-5 mb-30" href="#"><img class="d-block mx-auto" src="img/partners/09.png" width="165" alt="Partner"></a></div>
+      </div>
+    </section>
+    <!-- Contact Us CTA-->
+    <section class="bg-gradient py-4">
+      <div class="container position-relative bg-no-repeat bg-center py-5 text-center" style="background-image: url(img/pages/dotted-map.png);">
+        <h2 class="block-title text-white mt-5 mb-4">Let's Connect<small class="text-white">Share your ideas with us and we do our best to turn your ideas into reality.</small></h2><a class="btn btn-light mb-5" href="contacts-v1.html">Contact Us</a>
+      </div>
+    </section>
     <!-- Footer-->
     <footer class="bg-dark pt-5">
       <!-- First Row-->
