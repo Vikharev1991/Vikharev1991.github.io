@@ -83,18 +83,14 @@
                   <p class="text-sm text-muted mt-3 mb-0">Новый инвестор ? <a href='https://app.fliphouse.io/register'>Зарегистрируйтесь</a></p>
                 </div>
               </li>
-              <li class="dropdown-toggle"><a class="navbar-link" href="#"><img src="img/flags/rurussiaflag_111751.ico" alt="RUS"/>Рус / Руб</a>
+             <li class="dropdown-toggle"><a class="navbar-link" href="#"><img src="img/flags/rurussiaflag_111751.ico" alt="RUS"/>Рус / Руб</a>
                 <div class="dropdown-menu lang-dropdown right-aligned">
-                  <div class="p-3">
-                    <select class="form-control">
-                      <option value="usd">$ USD</option>
-                      <option value="eur">€ EUR</option>
-                      <option value="ukp">£ UKP</option>
-                      <option value="jpy">¥ JPY</option>
-                    </select>
-                  </div><a class="dropdown-item" href="English/dist/blog-tehnology-en.html"><img src="img/flags/en.png" alt="English"/>English</a><a class="dropdown-item" href="#"><img src="img/flags/de.png" alt="Deutsch"/>Deutsch</a><a class="dropdown-item" href="#"><img src="img/flags/idindonesiaflag_111827.ico" alt="Indonesia"/>Indonesia</a>
+                  <a class="dropdown-item" href="English/dist/blog-invest-en.html"><img src="img/flags/en.png" alt="English"/>English</a><a class="dropdown-item" href="#"><img src="img/flags/de.png" alt="Deutsch"/>Deutsch</a><a class="dropdown-item" href="#"><img src="img/flags/idindonesiaflag_111827.ico" alt="Indonesia"/>Indonesia</a>
                 </div>
               </li>
+              <li class="text-sm"><a class="navbar-link" data-options="rub" id="usd"></a> <div class="dropdown-menu right-aligned p-3 text-center" style="min-width: 200px;">
+                <li class="text-sm"><a class="navbar-link" data-options="rub" id="eur"></a> <div class="dropdown-menu right-aligned p-3 text-center" style="min-width: 200px;">
+                </div>
             </ul>
           </div>
         </div>
@@ -382,5 +378,14 @@
     <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
     <script src="js/vendor.min.js"></script>
     <script src="js/theme.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script> $.getJSON("https://www.cbr-xml-daily.ru/daily_json.js", function(data) {
+    $('#usd').html((data.Valute.USD.Value<data.Valute.USD.Previous?'  <i class="fas fa-long-arrow-alt-down text-success"></i>'  :  '<i class="fas fa-long-arrow-alt-up text-danger"></i>')+ " " + '<i class="fas fa-dollar-sign text-muted"></i>'  + " " + data.Valute.USD.Value.toFixed(2)+ " " + ' <i class="fas fa-ruble-sign text-muted"></i>');
+    });
+    </script>
+    <script> $.getJSON("https://www.cbr-xml-daily.ru/daily_json.js", function(data) {
+    $('#eur').html((data.Valute.EUR.Value<data.Valute.EUR.Previous?'  <i class="fas fa-long-arrow-alt-down text-success"></i>'  :  '<i class="fas fa-long-arrow-alt-up text-danger"></i>')+ " " + '<i class="fas fa-euro-sign text-muted"></i>'  + " " + data.Valute.EUR.Value.toFixed(2)+ " " + ' <i class="fas fa-ruble-sign text-muted"></i>');
+    });
+    </script>
   </body>
 </html>
